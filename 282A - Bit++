@@ -1,0 +1,34 @@
+/**
+282A - Bit++
+Code is written by Zahid Sarder
+Email:: sourovsarder3@gmail.com
+**/
+
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.setf(ios::fixed,ios::floatfield);
+
+    int tc, x=0;
+    cin>>tc;
+    while(tc--)
+    {
+        string st;
+        char ch;
+        cin>>ch;
+        getline(cin, st);
+        st = ch + st;
+        if(st == "++X" || st == "X++")
+            x++;
+        else
+            x--;
+    }
+
+    cout<<x<<endl;
+    return 0;
+}
