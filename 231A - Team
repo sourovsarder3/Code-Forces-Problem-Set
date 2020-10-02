@@ -1,0 +1,27 @@
+/**
+231A - Team
+Code is written by Zahid Sarder
+Email:: sourovsarder3@gmail.com
+**/
+
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.setf(ios::fixed,ios::floatfield);
+
+    int tc, ct=0;
+    cin>>tc;
+    while(tc--)
+    {
+        int sum=0, p, v, t;
+        cin>>p>>v>>t;
+        sum = p+v+t;
+        if(sum>=2) ct++;
+    }
+    cout<<ct<<endl;
+}
