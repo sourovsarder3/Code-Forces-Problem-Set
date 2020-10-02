@@ -1,0 +1,33 @@
+/**
+71A - Way Too Long Words
+Code is written by Zahid Sarder
+Email:: sourovsarder3@gmail.com
+**/
+
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.setf(ios::fixed,ios::floatfield);
+
+    int tc;
+    cin>>tc;
+    while(tc--)
+    {
+        string ln;
+        char c;
+        int sz;
+        cin>>c;
+        getline(cin, ln);
+        ln = c + ln;
+        sz = ln.size();
+        if(sz <=10)
+            cout<<ln<<endl;
+        else
+            cout<<ln[0]<<sz-2<<ln[sz-1]<<endl;
+    }
+}
